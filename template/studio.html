@@ -1,0 +1,46 @@
+<section class="apartments">
+    <div class="container">
+        <h1>Apartments</h1>
+        <div class="row">
+            <div class="filter_wrap">
+                <ul>
+                    <li><a href="#/apartments">All Apartments</a></li>
+                    <li><a href="#/studio" class="active">Studio Apartment</a></li>
+                    <li><a href="#/two-rooms">Two-Roomed Flat</a></li>
+                    <li><a href="#/large">Large Apartment</a></li>
+                </ul>
+            </div>
+            <div class="mix_wrap" ng-repeat="apartment in apartments | filterStudio">
+                <div class="col-xs-12 col-sm-6 col-lg-4 item_wrap_mx">
+                    <a href="#"><img ng-src="{{apartment.imageUrl}}" alt="{{apartment.id}}"></a>
+                    <div class="hidden">
+                        <div class="hide_desc">
+                            <h2>{{apartment.name}}</h2>
+                            <div class="hide_desc_item">
+                                <div class="item_string clearboth">
+                                    <p class="left">{{apartment.room_desc}}</p>
+                                    <p class="right">{{apartment.room_desc_num}}</p>
+                                </div>
+                                <div class="item_string clearboth">
+                                    <p class="left">{{apartment.area_desc}}</p>
+                                    <p class="right">{{apartment.area_desc_num}}</p>
+                                </div>
+                                <div class="item_string clearboth">
+                                    <p class="left">{{apartment.desc_storeys}}</p>
+                                    <p class="right">{{apartment.desc_storeys_num}}</p>
+                                </div>
+                                <div class="item_string clearboth">
+                                    <p class="left">{{apartment.desc_price}}</p>
+                                    <p class="right">{{apartment.desc_price_num}}</p>
+                                </div>
+                                <div class="button_wrap">
+                                    <a href="#/apartments/{{apartment.id}}" class="det_butt"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

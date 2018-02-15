@@ -1,0 +1,25 @@
+{
+  "id": "studio4",
+  "images": [
+    "img/apartments/item6.jpg",
+    "img/apartments/item6-1.jpg",
+    "img/apartments/item6-2.jpg",
+    "img/apartments/item6-3.jpg",
+    "img/apartments/item6-4.jpg",
+    "img/apartments/item6-5.jpg"
+  ],
+  "name": "Studio apartment in an unusual design",
+  "room_desc": "№ of rooms:",
+  "room_desc_num": "1",
+  "area_desc": "Total area:",
+  "area_desc_num": "45 sq.m.",
+  "desc_year": "Year of construction:",
+  "desc_year_num": "1998",
+  "desc_condition": "Condition of the apartment:",
+  "desc_condition_num": "High",
+  "desc_storeys": "Number of storeys:",
+  "desc_storeys_num": "4",
+  "desc_price": "Price:",
+  "desc_price_num": "460$",
+  "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium."
+}

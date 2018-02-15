@@ -1,0 +1,57 @@
+<section class="apartments_detail">
+    <div class="container">
+        <h1>{{apartment.name}}</h1>
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1 main_img">
+                <img class="main_img" ng-src="{{mainImageUrl}}" alt="{{apartment.id}}">
+            </div>
+            <div class="detail_img col-md-1" ng-repeat="img in apartment.images">
+                <img ng-src="{{img}}" ng-click="setImage(img)">
+            </div>
+            <div class="col-md-10 col-md-offset-1">
+                <h2>Main Characteristics </h2>
+                <div class="row">
+                    <div class="col-xs-2 col-md-2 head_info">{{apartment.room_desc}}</div>
+                    <div class="col-xs-2 col-md-2 head_info">{{apartment.area_desc}}</div>
+                    <div class="col-xs-2 col-md-2 head_info">{{apartment.desc_year}}</div>
+                    <div class="col-xs-2 col-md-2 head_info">{{apartment.desc_condition}}</div>
+                    <div class="col-xs-2 col-md-2 head_info">{{apartment.desc_storeys}}</div>
+                    <div class="col-xs-2 col-md-2 head_info">{{apartment.desc_price}}</div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-2 col-md-2 head_info num">{{apartment.room_desc_num}}</div>
+                    <div class="col-xs-2 col-md-2 head_info num">{{apartment.area_desc_num}}</div>
+                    <div class="col-xs-2 col-md-2 head_info num">{{apartment.desc_year_num}}</div>
+                    <div class="col-xs-2 col-md-2 head_info num">{{apartment.desc_condition_num}}</div>
+                    <div class="col-xs-2 col-md-2 head_info num">{{apartment.desc_storeys_num}}</div>
+                    <div class="col-xs-2 col-md-2 head_info num">{{apartment.desc_price_num}}</div>
+                </div>
+                <h2>Description</h2>
+                <p>{{apartment.description}}</p>
+                <div class="contact_wrap_detail">
+                    <h2>If You Liked This Item, Please Contact Us</h2>
+                    <form action="#" class="main_form" ng-controller="formCtrl" name="myForm" novalidate>
+                        <label class="form-group">
+                            <input type="text" name="user"  ng-model="user" required />
+                            <span ng-show="myForm.user.$dirty && myForm.user.$invalid"></span>
+                            <span class="alert" ng-show="myForm.user.$error.required">Username is required.</span>
+                        </label>
+                        <label class="form-group">
+                            <input type="email" name="email" ng-model="email" required>
+                            <span ng-show="myForm.email.$dirty && myForm.email.$invalid"></span>
+                            <span class="alert" ng-show="myForm.email.$error.required">Email is required.</span>
+                            <span class="alert" ng-show="myForm.email.$error.email">Invalid email address.</span>
+                        </label>
+                        <label class="form-group">
+                            <textarea  name ="message" ng-model="message" required /></textarea>
+                            <span ng-show="myForm.message.$dirty && myForm.message.$invalid"></span>
+                            <span class="alert" ng-show="myForm.message.$error.required">Message is required.</span>
+                        </label>
+                        <input class="submit" type="submit" value="Send">
+                    </form>
+                </div>
+                <a class="detail_back" href="#/apartments">< <span>Back To Apartments</span></a>
+            </div>
+        </div>
+    </div>
+</section>

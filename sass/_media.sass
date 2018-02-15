@@ -1,0 +1,125 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+  .hidden
+    transform: translateX(-750px)
+  .hide_desc
+    h2
+      +sect_h1($default-font, 20px, 24px, 1px, uppercase)
+      margin: 20px 0
+  .button_wrap a.cont_butt
+      margin: 30px 0 0
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+  .feature_wrap,
+  .why_wrap_item
+    text-align: center
+  .features
+    h1
+      margin-bottom: 30px
+  .why_wrap
+    h1
+      margin-bottom: 30px
+
+  .why_wrap
+    margin-bottom: 40px
+  .hide_desc
+    h2
+      +sect_h1($default-font, 16px, 24px, 1px, uppercase)
+      margin: 7px 0
+  .button_wrap a.cont_butt
+    margin: 0px 0 0
+  .blog_desc_wrap
+    margin-bottom: 50px
+  .det_butt
+    margin: 0
+  .main_img
+      width: 100%
+      padding: 0
+      margin-bottom: 10px
+      img
+        margin: 0
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+  .hidden
+    transform: translateX(-750px)
+  .hide_desc
+    h2
+      +sect_h1($default-font, 20px, 24px, 1px, uppercase)
+      margin: 15px 0
+  .button_wrap a.cont_butt
+    margin: 10px 0 0
+  .item_string
+    margin-bottom: 12px
+  .contact_wrap_detail
+    width: 100%
+  .testims_wrap
+    margin: 0 auto 20px
+    width: 70%
+@media only screen and (max-width : 640px)
+  .head_info
+    font-size: 14px
+    line-height: 15px
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+  .head_desc
+    margin: 130px 0 0
+  .hide_desc
+    h2
+      +sect_h1($default-font, 16px, 20px, 1px, uppercase)
+      margin: 5px 0
+  .button_wrap a.cont_butt
+    margin: 0px 0 0
+  .item_string
+    margin-bottom: 5px
+  .filter_wrap
+    li
+      margin-left: 10px
+  .head_info
+    font-size: 12px
+    line-height: 14px
+@media only screen and (max-width : 430px)
+  .filter_wrap
+    li
+      &:nth-child(3n)
+        margin-left: 0
+
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+

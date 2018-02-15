@@ -1,0 +1,74 @@
+header
+	background: url('../img/head_bg1.jpg') center 0px fixed
+	background-size: cover
+	min-height: 700px
+	height: 100vh
+	position: relative
+.head_cont
+	background: url('../img/scroll.gif') center bottom fixed no-repeat
+	background-size: auto 80px
+	height: 100vh
+a.logo
+	display: block
+	margin-top: 20px
+
+.head_desc
+	margin: 180px 0 0
+	text-align: center
+	h1
+		+sect_h1($default-bold, 30px, 40px, 1px, uppercase)
+		color: #fff
+		text-shadow: 1px 1px 0px rgba(150, 150, 150, 1)
+		margin-bottom: 15px
+		span
+			color: $color_br
+	p
+		+sect_p($default-font, 18px, 24px)
+.cont_butt,
+.det_butt
+	display: inline-block
+	padding: 7px 15px
+	background-color: $color_br
+	border-radius: 5px
+	margin: 7px 0 0
+	+sect_p($default-bold, 18px, 18px)
+	color: $color_w
+	+transition(all, 0.5s, ease-in-out)
+	&:hover,
+	&:focus
+		background-color: #554444
+		color: $color_w
+.cont_butt
+	margin-top: 50px
+.hamburger
+	position: fixed
+	right: 0
+	top: 20px
+	z-index: 99
+	.hamburger-inner, .hamburger-inner:after, .hamburger-inner:before
+		background-color: #5b5a5a
+.panel
+	background-color: #353535
+    right: -15.625em
+    width: 15.625em
+.panel ul
+    list-style: none
+    padding: 0
+.panel ul li
+		padding-left: 25px
+		+transition(all, 0.5s, ease-in-out)
+		&:hover,
+		&:focus
+			background-color: #565656
+		a
+			+sect_h1($default-font, 16px, 16px, 1px, uppercase)
+			color: $color_gr_w
+			letter-spacing: 2px
+			width: 100%
+			display: block
+			padding: 15px 0
+
+.active_nav
+	background-color: #565656
+
+

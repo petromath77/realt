@@ -1,0 +1,38 @@
+.best_aparts
+	background-color: #ede8e4
+.item_wrap
+	position: relative
+	padding: 0
+	overflow: hidden
+	&:hover .hidden
+		transform: translateX(0px)
+.hidden
+	display: block!important
+	position: absolute
+	top: 0
+	background-color: rgba(0, 0, 0, 0.6)
+	width: 100%
+	height: 100%
+	padding: 17px 35px
+	transition: all 0.4s ease-in-out
+	transform: translateX(-750px)
+.hide_desc
+	border: 1px solid #ccc
+	border-radius: 5px
+	padding: 0px 20px
+	height: 100%
+	text-align: center
+	h2
+		+sect_h1($default-font, 16px, 24px, 1px, uppercase)
+		color: $color_gr_w
+		padding: 0
+		margin: 7px 0
+		font-weight: 400
+	p
+		color: $color_gr_w
+.item_string
+	height: 16px
+	line-height: 16px
+	margin-bottom: 7px
+
+

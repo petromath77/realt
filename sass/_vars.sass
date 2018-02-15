@@ -1,0 +1,24 @@
+$default-font: "pt-sans", sans-serif
+$default-bold: "pt-sans-bold", sans-serif
+$color_p: #808080
+$color_gr_w: #b5b5b5
+$color_w: #fff
+$color_br: #b89671
+
+=sect_h1($font_fam, $font_size, $font_height, $lett_space, $txt_trans)
+	font-family: $font_fam
+	font-size: $font_size
+	line-height: $font_height
+	letter-spacing: $lett_space
+	text-transform: $txt_trans
+
+=sect_p($font_fam, $font_size, $font_height)
+	font-family: $font_fam
+	font-size: $font_size
+	line-height: $font_height
+
+=transition($trans_prop, $trans_durat, $trans_func)
+	transition-property: $trans_prop
+	transition-duration: $trans_durat
+	transition-timing-function: $trans_func
+
